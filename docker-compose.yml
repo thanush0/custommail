@@ -1,0 +1,45 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ${POSTGRES_DATA:-/data/custommail/postgres}:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks: [private]
+  app:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      STORAGE_DIR: /data/custommail
+      MAILUMI_API_KEY: ${MAILUMI_API_KEY}
+      MAILUMI_SEND_API_KEY: ${MAILUMI_SEND_API_KEY}
+      MAILUMI_WEBHOOK_SECRET: ${MAILUMI_WEBHOOK_SECRET}
+      SSL_CERT_FILE: /run/instabox/secrets/ca-bundle.pem
+    volumes:
+      - /data/custommail:/data/custommail
+      - /run/instabox/secrets/ca-bundle.pem:/run/instabox/secrets/ca-bundle.pem:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "0.0.0.0:8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    networks: [private]
+networks:
+  private:
+    external: true
+    name: custommail_private

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Temp Mail — CustomMail</title>
+  <link rel="stylesheet" href="/static/temp-mail.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <a class="brand" href="/">
+        <span class="logo">C</span>
+        <span><b>CustomMail</b><small>TEMP MAIL</small></span>
+      </a>
+      <a class="back" href="/">Back to CustomMail <span>↗</span></a>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">DISPOSABLE INBOX</div>
+      <h1>Temporary email.<br><span>No signup needed.</span></h1>
+      <p>Get a random address, receive messages, and keep your main inbox clear.</p>
+    </section>
+
+    <section class="address-card">
+      <div class="address-label"><span class="live-dot"></span> YOUR TEMPORARY ADDRESS</div>
+      <div class="address-line">
+        <div id="addressValue" class="address-value">Creating your inbox...</div>
+        <button id="copyButton" class="secondary" disabled>Copy address</button>
+        <button id="generateButton" class="primary">New address</button>
+      </div>
+      <div class="address-meta">
+        <span id="expiryLabel">Preparing your inbox</span>
+        <span id="statusLabel">Connecting</span>
+      </div>
+      <div id="notice" class="notice" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="workspace">
+      <div class="inbox-panel">
+        <div class="panel-head">
+          <div><div class="eyebrow">INCOMING MESSAGES</div><h2>Inbox <span id="messageCount" class="count">0</span></h2></div>
+          <button id="refreshButton" class="icon-button" title="Refresh inbox" disabled>↻</button>
+        </div>
+        <div id="messageList" class="message-list">
+          <div class="empty"><div class="empty-icon">✉</div><b>Getting your inbox ready</b><p>Messages sent to your address will appear here.</p></div>
+        </div>
+        <div class="panel-foot"><span>Auto-refresh every 12 seconds</span><span id="lastUpdated">Not refreshed yet</span></div>
+      </div>
+
+      <article class="reader-panel">
+        <div id="readerEmpty" class="reader-empty">
+          <div class="empty-icon">↙</div>
+          <b>Select a message</b>
+          <p>Choose an email from your inbox to read it here.</p>
+        </div>
+        <div id="readerContent" hidden>
+          <div class="reader-top">
+            <div class="eyebrow">MESSAGE</div>
+            <button id="deleteMessageButton" class="delete-button">Delete</button>
+          </div>
+          <h2 id="readSubject">(no subject)</h2>
+          <div id="readMeta" class="read-meta"></div>
+          <pre id="readBody" class="read-body"></pre>
+          <div id="readAttachments" class="attachments"></div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <span>CustomMail Temp Mail</span>
+      <span>Inbox expires automatically after 24 hours. Do not use for sensitive or permanent accounts.</span>
+    </footer>
+  </main>
+  <script src="/static/temp-mail.js" defer></script>
+</body>
+</html>
