@@ -1,0 +1,32 @@
+{
+  "algorithm": "sha256",
+  "copyright_holder": "Thanush Priyan R.",
+  "files": {
+    "app/__init__.py": "adf2548d21e67ea22e74e31d6f722baea279838ae0cb85a933b812321b2e5a60",
+    "app/config.py": "4a1457b5aa086181b893813380160bd5898416674c44541e002da76a3aa1dd99",
+    "app/db.py": "fc0cf857a16f7527f34f28addd2a89655b8410660c7171d621a122dea6e22989",
+    "app/inbound.py": "7c4c0d7f8faf1d6d186df70af7315362f07eb70ac11e9cadc1ab9112db317986",
+    "app/mail.py": "bee420b0e43f498cfda732bed284b119a511244474b9d3f3c7cc05ea093f5136",
+    "app/mailumi.py": "f3fa68a3027eb98dbb4d44fb8415e6c443ce54274757766801df33c172e01698",
+    "app/main.py": "105b740b990fed443e0c9a950a87a0f71a655bc224cc312ca7aaf918aef29b44",
+    "app/models.py": "2083f19c25f5e41d0589bd3c6f5952691c990469b79e9b30e91ad9acf137a2da",
+    "app/security.py": "1592bff858e8de488140ade6f9bd27b6cbfee3fbe48e5b203b8e9d7296ca9d48",
+    "app/temp_mail.py": "e02a4278f7998bbdafc93aa2178dc43be05642b7a979d052f58d0c13ecadc3f0",
+    "ops/backup.sh": "ed3f876f19c24c452e9f9074c685288ec0904349ca6c04934748c29d4a4c69ef",
+    "ops/provision-mailbox-docker-mailserver.sh": "38e868b9314a426cb0fa10a7b56e413c7ef8ff7f9ff7fda7dd66528042ee0c6c",
+    "ops/verify.sh": "912e9b2ade3eff62e9323d77b8303d6ae2c2ff815652d0128a1de01aa6508c39",
+    "ops/verify_integrity.py": "1141e5a172185c55fdc4c45dcaa78df578069969dadfff9467e24c84a61cba5a",
+    "static/app.js": "68dfef60597c929fb0fc619c97b377aac472725000aaa1e0056fc79a766ff7d7",
+    "static/index.html": "ae46ed42554d9bdd5b494fbe7dc7d2f33fe644eb2f288c483705b89159673e26",
+    "static/style.css": "2a9ab8cdb7aaec7cb69dedebb3deb32e22bdc827e8bde924dc313f00518dd345",
+    "static/temp-mail.css": "41c858f5d0ee5896690dff1c0f64e11533f60d3f1b48ff6713b666686f8fbaeb",
+    "static/temp-mail.html": "ee97dcdf1ef45b7f6e84bbde75f9b179c159a897030365da48713fd4fdfe32cb",
+    "static/temp-mail.js": "68744c845ae335293f754d96efc9889e888245063dd10f1441e708c0731537c7",
+    "tests/test_app.py": "f1c463da2474ca946a1b177a131493a235e8545709428f571a22fa00a9c19f50",
+    "tests/test_inbound.py": "1250257d72221da4d9341f2c44dcf9d2d8c364b60c8dcc3c42fa4946ea27b6e0",
+    "tests/test_outbound.py": "89207e120ecc907eba602b9874b560572b353af80b244bc26ccbf21c7b160a73",
+    "tests/test_temp_mail.py": "24b9d88994b07c0c8f2e10541990dc6576b3428f63a267264b9829abf112297d"
+  },
+  "format": 1,
+  "repository": "https://github.com/thanush0/custommail"
+}

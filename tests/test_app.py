@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+# CustomMail | https://github.com/thanush0/custommail
 import os
 os.environ.setdefault("APP_SECRET","test-secret-that-is-long-enough-for-tests")
 os.environ.setdefault("ADMIN_PASSWORD","test-admin-password-very-long")

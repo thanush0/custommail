@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+# CustomMail | https://github.com/thanush0/custommail
 from datetime import datetime, timezone
 from sqlalchemy import Boolean, DateTime, ForeignKey, Integer, String, Text, UniqueConstraint, Index
 from sqlalchemy.orm import Mapped, mapped_column, relationship

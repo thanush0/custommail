@@ -1,4 +1,6 @@
 #!/bin/sh
+# Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+# CustomMail | https://github.com/thanush0/custommail
 set -eu
 cd "$(dirname "$0")/.."
 STAMP=$(date -u +%Y%m%dT%H%M%SZ)

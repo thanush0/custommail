@@ -1,3 +1,6 @@
+/* Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+ * CustomMail | https://github.com/thanush0/custommail
+ */
 *{box-sizing:border-box}
 :root{color-scheme:light;--bg:#f4f6fb;--paper:#fff;--ink:#172033;--muted:#778196;--line:#e6eaf2;--blue:#3558d4;--blue-soft:#edf1ff;--red:#b83c4b;--shadow:0 18px 50px rgba(31,47,83,.08)}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}

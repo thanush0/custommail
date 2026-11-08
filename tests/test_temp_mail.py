@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+# CustomMail | https://github.com/thanush0/custommail
 import os, base64, hashlib, hmac, json, time
 from datetime import datetime, timedelta, timezone
 os.environ.setdefault("APP_SECRET", "test-secret-that-is-long-enough-for-tests")

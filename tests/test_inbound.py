@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+# CustomMail | https://github.com/thanush0/custommail
 import os
 
 os.environ.setdefault("INBOUND_EMAIL_SECRET", "test-inbound-secret")

@@ -896,3 +896,44 @@ For bug reports, include the relevant error message, steps to reproduce,
 and application version/commit. **Remove email addresses, message
 contents, passwords, API keys, tokens, and other private data before
 sharing logs.**
+
+---
+
+## Ownership, Copyright and License
+
+**CustomMail is proprietary software.**
+
+Copyright (c) 2026 Thanush Priyan R. All Rights Reserved.
+
+- **Copyright holder:** Thanush Priyan R.
+- **Project:** CustomMail
+- **Official repository:** https://github.com/thanush0/custommail
+- **License:** Proprietary — All Rights Reserved (see [`LICENSE`](LICENSE))
+
+Viewing or cloning this repository does not grant permission to use, modify,
+redistribute, sublicense, or commercially exploit CustomMail. Such permission
+must be obtained in advance in a separate written agreement from the
+copyright holder. Third-party components remain subject to their respective
+licenses.
+
+Source-file notices provide attribution but do not technically prevent
+copying or modification. The `LICENSE` states the project's permission terms.
+
+### Verify source-file integrity
+
+Run:
+
+```bash
+python3 ops/verify_integrity.py create
+python3 ops/verify_integrity.py verify
+```
+
+`create` writes or refreshes `ops/integrity-manifest.json` from the source
+tree. `verify` reports modified, missing, and newly added source files. It
+never deletes, blocks, or alters source files. Review changes before
+regenerating the manifest and commit the manifest with the reviewed revision.
+
+The manifest is a change-detection aid, not a digital signature or proof of
+authorship: anyone who can modify the repository can also regenerate it.
+For stronger release provenance, sign Git commits and tags with your own
+signing key and publish verification instructions separately.

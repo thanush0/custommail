@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+# CustomMail | https://github.com/thanush0/custommail
 set -euo pipefail
 # Run on the separate mail VPS, not on InstaBox.
 # Usage: sudo ./provision-mailbox-docker-mailserver.sh alice@mail.example.net

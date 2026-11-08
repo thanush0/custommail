@@ -1,3 +1,5 @@
+# Copyright (c) 2026 Thanush Priyan R.. All Rights Reserved.
+# CustomMail | https://github.com/thanush0/custommail
 from contextlib import asynccontextmanager
 from pathlib import Path
 from uuid import uuid4
